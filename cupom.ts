@@ -15,24 +15,24 @@ let dados = {
 
 function dados_loja() {
 	// Implemente aqui
-	if (dados.nome_loja == "") {
+	if (!dados.nome_loja) {
 		throw new Error(`O campo nome da loja é obrigatório`);
 	}
 
-	if (dados.logradouro == "") {
+	if (!dados.logradouro) {
 		throw new Error(`O campo logradouro do endereço é obrigatório`);
 	}
 
-	if (dados.municipio == "") {
+	if (!dados.municipio) {
 		throw new Error(`O campo município do endereço é obrigatório`);
 	}
-	if (dados.estado == "") {
+	if (!dados.estado) {
 		throw new Error(`O campo estado do endereço é obrigatório`);
 	}
-	if (dados.cnpj == "") {
+	if (!dados.cnpj) {
 		throw new Error(`O campo CNPJ da loja é obrigatório`);
 	}
-	if (dados.inscricao_estadual == "") {
+	if (!dados.inscricao_estadual) {
 		throw new Error(`O campo inscrição estadual da loja é obrigatório`);
 	}
 
